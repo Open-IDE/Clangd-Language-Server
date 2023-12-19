@@ -1,4 +1,3 @@
----
 dependencies:
-- .fn/reboot
-- compiler/Clang
+- language server/clangd/install
+- VSCode Extension/Clangd
