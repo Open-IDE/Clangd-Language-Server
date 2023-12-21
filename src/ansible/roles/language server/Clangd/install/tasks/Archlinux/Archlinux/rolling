@@ -1,4 +1,9 @@
 ---
-- name: Print the gateway for each host when defined
-  ansible.builtin.debug:
-    msg: System {{ inventory_hostname }} has gateway {{ ansible_default_ipv4.gateway }}
+# Find: pacman -F clangd
+
+- name: Install Clangd
+  community.general.pacman:
+    name:
+      - extra/clang
+    state: present
+  become: true
