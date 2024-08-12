@@ -1,4 +1,0 @@
----
-dependencies:
-- .fn/reboot
-- compiler/Clang
